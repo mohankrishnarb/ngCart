@@ -5,6 +5,7 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 
+
 @NgModule({
   declarations: [
     DashboardComponent
@@ -12,6 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     CommonModule,
     PagesRoutingModule
-  ]
+  ],
+
 })
 export class PagesModule { }

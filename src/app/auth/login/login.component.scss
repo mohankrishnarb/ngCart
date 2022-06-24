@@ -13,3 +13,45 @@
     margin: 0 auto;
     outline: none;
 }
+
+.login{
+    background-color: #d2d6de;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.logInfo{
+    width: 360px;
+    display: block;
+    margin: 0 auto!important;
+}
+
+mat-form-field-wrapper{
+    padding-bottom: 0!important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex{
+    width: 150%!important;
+}
+
+.mainTitle h2{
+    font-size: 35px;
+}
+
+.submit-btn{
+    display: block;
+    float: right;
+}
+
+.homePage{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.homePage a{
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
+}

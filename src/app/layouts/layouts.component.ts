@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-layouts',
@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutsComponent implements OnInit {
 
+  @Output() toggleMenuForMe: EventEmitter<any> = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  menuOpen = true;
+
+  menuToggle(){
+    this.menuOpen = !this.menuOpen;
   }
 
 }

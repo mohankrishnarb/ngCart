@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthComponent } from './auth/auth.component';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { PagesComponent } from './pages/pages.component';
+import { LayoutsModule } from './layouts/layouts.module';
+import { PagesModule } from './pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -18,10 +20,12 @@ import { PagesComponent } from './pages/pages.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    LayoutsModule,
+    PagesModule
   ],
  
-  providers: [],
+  // providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

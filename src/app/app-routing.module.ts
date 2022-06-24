@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './auth/auth.component';
+import { AuthModule } from './auth/auth.module';
 import { LayoutsComponent } from './layouts/layouts.component';
 
 const routes: Routes = [
@@ -13,9 +14,10 @@ const routes: Routes = [
 
   /* layouts routes */
 
-  { path:'layouts', component: LayoutsComponent, loadChildren:() => import('./layouts/layouts.module').then(m => m.LayoutsModule) }
-
+  { path:'layouts', component: LayoutsComponent, loadChildren:() => import('./pages/pages.module').then(m => m.PagesModule),canActivate: [AuthModule] },
   /* layouts routes */
+
+
 
 ];
 

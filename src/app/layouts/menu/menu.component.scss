@@ -1,0 +1,49 @@
+.menuItem{
+    transition: ease-in-out 0.2s ;
+    &:hover{
+        color: #3f51b5;
+        background-color: #eef0ff;
+        padding: 0px 30px;
+        transform: translateX(0.5s);
+    }
+}
+
+.title{
+    color: #3f51b5;  
+}
+
+.mat-icon{
+    vertical-align: center;
+    margin-right: 1rem;
+    background-color: #eef0ff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.menuToggle{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.itemActive{
+    color: #3f51b5;
+    font-weight: 600;
+    border-right: 5px solid #3f51b5;
+    background-color: #eef0ff!important;
+}
+
+.menuIteminfo{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mat-list-base .mat-list-item, .mat-list-base .mat-list-option{
+    width: auto;
+}
