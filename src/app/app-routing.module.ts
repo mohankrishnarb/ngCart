@@ -14,7 +14,7 @@ const routes: Routes = [
 
   /* layouts routes */
 
-  { path:'layouts', component: LayoutsComponent, loadChildren:() => import('./pages/pages.module').then(m => m.PagesModule),canActivate: [AuthModule] },
+  { path:'layouts', component: LayoutsComponent, loadChildren:() => import('./pages/pages.module').then(m => m.PagesModule) },
   /* layouts routes */
 
 

@@ -9,18 +9,19 @@ import { LayoutsComponent } from './layouts/layouts.component';
 import { PagesComponent } from './pages/pages.component';
 import { LayoutsModule } from './layouts/layouts.module';
 import { PagesModule } from './pages/pages.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    // LayoutsComponent,
     PagesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AuthModule,
     LayoutsModule,
     PagesModule
   ],

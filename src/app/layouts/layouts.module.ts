@@ -32,9 +32,8 @@ import { PagesRoutingModule } from '../pages/pages-routing.module';
     MatListModule,
     MatSidenavModule,
     LayoutsRoutingModule,
-    PagesModule,
     PagesRoutingModule
   ],
-  exports:[LayoutsComponent],
+  exports:[LayoutsComponent ],
 })
 export class LayoutsModule { }
