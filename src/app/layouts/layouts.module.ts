@@ -34,6 +34,6 @@ import { PagesRoutingModule } from '../pages/pages-routing.module';
     LayoutsRoutingModule,
     PagesRoutingModule
   ],
-  exports:[LayoutsComponent ],
+  exports:[LayoutsComponent, MenuComponent, HeaderComponent, FooterComponent ],
 })
 export class LayoutsModule { }

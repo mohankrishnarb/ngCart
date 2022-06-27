@@ -1,0 +1,94 @@
+.mainCategory{
+    clear: both;
+    overflow: hidden;
+}
+
+.addCategory{
+    float: left;
+    width: 37%;
+}
+
+.infoCategory{
+    float: left;
+}
+
+.addCat-btn{
+    float: right;
+}
+
+.catTh{
+    font-weight: 400;
+    color: #556063;
+}
+
+.form-control{
+    outline: none;
+    box-shadow: none;
+}
+
+.form-select{
+    outline: none;
+    box-shadow: none;
+}
+
+.categoryTable table tbody tr {
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.searchFilter{
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.f1{
+    float: left;
+}
+
+.f2{
+    float: left;
+}
+
+.fs1{
+    float: left;
+}
+
+.fs2{
+    float: left;
+}
+
+.fs1Con{
+    clear: both;
+    overflow: hidden;
+}
+
+.fs1Con label{
+    float: left;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.fs1Con select{
+    float: left;
+    width: 69%;
+    margin-left: 5px;
+}
+
+.fs2Con{
+    clear: both;
+    overflow: hidden;
+}
+
+.fs2Con label{
+    float: left;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.fs2Con select{
+    float: left;
+    width: 60%;
+    margin-left: 5px;
+}

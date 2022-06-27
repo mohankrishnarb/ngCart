@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  BASE_URL:'http://localhost:3000',
+  CATEGORY_BASE_URL:'http://localhost:3000/categories/',
+  CATEGORIES:{
+    GET_ALL_CATEGORIES: 'list',
+    GET_CATEGORY_DETAILS: 'view',
+    ADD_CATEGORY_DETAILS: 'add',
+    UPDATE_CATEGORY_DETAILS: 'update',
+    DELETE_CATEGORY_DETAILS: 'remove'    
+  },
 };
 
 /*
