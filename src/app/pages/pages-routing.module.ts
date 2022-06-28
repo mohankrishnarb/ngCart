@@ -10,6 +10,7 @@ import { UsersComponent } from './users/users.component';
 const routes: Routes = [
   { path:'dashboard', component: DashboardComponent },
   { path:'categories', loadChildren:() => import('./categories/categories.module').then(m => m.CategoriesModule) },
+  { path:'subcategories', loadChildren:() => import('./subcategories/subcategories.module').then(m => m.SubcategoriesModule) },
   { path:'contact', component: ContactComponent },
   { path:'roles', component: RolesComponent },
   { path:'users', component: UsersComponent },

@@ -14,6 +14,7 @@ import { RolesComponent } from './roles/roles.component';
 import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EditCatoryComponent } from './categories/edit-catory/edit-catory.component';
+import { SubcategoriesComponent } from './subcategories/subcategories.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { EditCatoryComponent } from './categories/edit-catory/edit-catory.compon
     RolesComponent,
     PostsComponent,
     EditCatoryComponent,
+    SubcategoriesComponent,
   ],
   imports: [
     CommonModule,
