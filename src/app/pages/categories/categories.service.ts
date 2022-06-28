@@ -21,10 +21,12 @@ export class CategoriesService {
 
   addCategory(data:any){
     let url = environment.CATEGORY_BASE_URL + environment.CATEGORIES.ADD_CATEGORY_DETAILS;
-    return this.http.post<any>(data,url);
+    return this.http.post<any>(url,data);
   }
 
   deleteCategory(data:any){
+    console.log("delete:", data);
+    
     let url =`${environment.CATEGORY_BASE_URL + environment.CATEGORIES.DELETE_CATEGORY_DETAILS}/${data.id}`;
     return this.http.delete<any>(url,data); 
   }

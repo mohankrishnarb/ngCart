@@ -28,6 +28,14 @@ $ngCart-theme: mat.define-light-theme((
   )
 ));
 
+$ngCart-dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $ngCart-primary,
+    accent: $ngCart-accent,
+    warn: $ngCart-warn,
+  )
+));
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.

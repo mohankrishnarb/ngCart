@@ -10,6 +10,8 @@ import { CategoriesService } from '../categories.service';
 })
 export class EditCatoryComponent implements OnInit {
 
+  selectedOption: any;
+
   categoryForm = new FormGroup({
     categoryName:new FormControl(),
     categoryLanguage: new FormControl(),
@@ -18,25 +20,23 @@ export class EditCatoryComponent implements OnInit {
     categoryKeyword: new FormControl(),
     categoryOrder: new FormControl(),
     categoryShowMenu: new FormControl(),
-    categoryDate: new FormControl()
   })
 
   constructor(private fb: FormBuilder, private categoriesService: CategoriesService,private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.categoriesService.getCategories();
-    console.log(this.route.snapshot.params['id']);
     this.categoriesService.viewCategory(this.route.snapshot.params['id']).subscribe((data:any)=>{
       this.categoryForm = new FormGroup({
         categoryName: new FormControl(data['categoryName']),
         categoryLanguage: new FormControl(data['categoryLanguage']),
         categorySlug: new FormControl(data['categorySlug']),
         categoryDescription: new FormControl(data['categoryDescription']),
-        categoryKeyword: new FormControl(data['categgoryKeyword']),
+        categoryKeyword: new FormControl(data['categoryKeyword']),
         categoryOrder: new FormControl(data['categoryOrder']),
         categoryShowMenu: new FormControl(data['categoryShowMenu']),
-        categoryDate: new FormControl(data['categoryDate'])
       })
+      console.log(this.route.snapshot.params['id'],this.categoryForm.value);
     })
   }
 
@@ -48,5 +48,16 @@ export class EditCatoryComponent implements OnInit {
     })
     this.router.navigate(['/categories/view-category'])
   }
+
+  options = [
+    {name: 'Arabic', value: 1},
+    {name: 'Engilsh', value: 2}
+  ]
+
+  languages = [
+    {name:'All', value:1},
+    {name:'Arabic', value: 2},
+    {name:'Engilsh', value: 3}
+  ]
 
 }

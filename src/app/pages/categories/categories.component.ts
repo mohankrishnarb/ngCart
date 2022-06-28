@@ -14,7 +14,9 @@ export class CategoriesComponent implements OnInit {
   submitted: boolean = false;
   categoryId:string = '';
   categoryResult:any;
-  categoryList: any; 
+  categoryList: any;
+  categoryData: any; 
+  newCategory: any;
 
   constructor(private fb: FormBuilder, private categoriesService: CategoriesService,private activatedRoute: ActivatedRoute, private router: Router) { }
 
@@ -50,8 +52,14 @@ export class CategoriesComponent implements OnInit {
     })
   }
 
-  onSubmit(){
-
+  onSubmit(data:any){
+    console.log(JSON.stringify(this.categoryForm.value));
+    this.categoriesService.addCategory(data).subscribe((data:any[])=>{
+      this.categoryData = data;
+      this.newCategory =this.categoryData.results;
+      console.log(this.newCategory);
+      
+    })
   }
 
 }

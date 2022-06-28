@@ -8,10 +8,10 @@ export const environment = {
   CATEGORY_BASE_URL:'http://localhost:3000/categories/',
   CATEGORIES:{
     GET_ALL_CATEGORIES: 'list',
-    GET_CATEGORY_DETAILS: 'view',
+    GET_CATEGORY_DETAILS: 'list',
     ADD_CATEGORY_DETAILS: 'add',
     UPDATE_CATEGORY_DETAILS: 'update',
-    DELETE_CATEGORY_DETAILS: 'remove'    
+    DELETE_CATEGORY_DETAILS: 'delete'    
   },
 };
 
