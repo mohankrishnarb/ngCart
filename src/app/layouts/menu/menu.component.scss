@@ -3,7 +3,6 @@
     &:hover{
         color: #3f51b5;
         background-color: #eef0ff;
-        padding: 0px 30px;
         transform: translateX(0.5s);
     }
 }
@@ -46,4 +45,12 @@
 
 .mat-list-base .mat-list-item, .mat-list-base .mat-list-option{
     width: auto;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none!important;
+}
+
+::ng-deep .mat-expansion-panel-body{
+    padding: 0!important;
 }

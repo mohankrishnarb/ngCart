@@ -40,8 +40,7 @@ mat-form-field-wrapper{
 }
 
 .submit-btn{
-    display: block;
-    float: right;
+    text-align: center;
 }
 
 .homePage{
@@ -54,4 +53,8 @@ mat-form-field-wrapper{
     &:hover{
         cursor: pointer;
     }
+}
+
+.rig:hover{
+    cursor: pointer;
 }

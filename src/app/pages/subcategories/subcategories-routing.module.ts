@@ -5,7 +5,7 @@ import { ViewCatgoryComponent } from '../categories/view-catgory/view-catgory.co
 
 const routes: Routes = [
   { path:'edit-category/:id', component: EditCatoryComponent },
-  { path:'view-category', component: ViewCatgoryComponent }
+  { path:'view-subcategory', component: ViewCatgoryComponent }
 ];
 
 @NgModule({

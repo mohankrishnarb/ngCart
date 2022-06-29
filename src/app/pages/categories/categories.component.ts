@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserService } from '../../auth/user.service';
 
 @Component({
   selector: 'app-categories',
@@ -8,14 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
   
+  content?: string;
 
-
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-
-
-
+    this.userService.getAdminBoard().subscribe(
+      data => {
+        this.content = data;
+      },
+      err => {
+        this.content = JSON.parse(err.error).message;
+      }
+    );
   }
 
 

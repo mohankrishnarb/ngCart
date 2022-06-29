@@ -13,6 +13,8 @@ export const environment = {
     UPDATE_CATEGORY_DETAILS: 'update',
     DELETE_CATEGORY_DETAILS: 'delete'    
   },
+  AUTH_BASE_URL:'http://localhost:3000/api/auth/',
+  API_BASE_URL:'http://localhost:3000/api/test/'
 };
 
 /*

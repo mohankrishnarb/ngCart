@@ -1,1 +1,55 @@
-<p routerLink="/login">register works!</p>
+
+<section class="login">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="mainTitle">
+                    <h2 class="text-center">Infinite Panel</h2>
+                </div>
+                <div class="logInfo bg-white p-4 m-5 rounded-3">
+                    <div class="section-title">
+                        <h4 class="text-center">Register</h4>
+                    </div>
+                    <div class="loginForm">
+                        <form *ngIf="!isSuccessful" name="form" #f="ngForm" (ngSubmit)="f.form.valid && onSubmit()" novalidate>
+                            <div class="form-group">
+                                <mat-form-field class="example-full-width" appearance="outline" style="width: 100%;">
+                                    <input type="email" matInput placeholder="Username" name="username" [(ngModel)]="form.username" required #username="ngModel">
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group">
+                                <mat-form-field class="example-full-width" appearance="outline" style="width: 100%;">
+                                    <input type="email" matInput placeholder="Email" name="email" [(ngModel)]="form.email" required email #email="ngModel">
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group"> 
+                                <mat-form-field class="example-full-width" appearance="outline" style="width: 100%;">
+                                    <input type="password" matInput placeholder="Password..." name="password" [(ngModel)]="form.password" required #password="ngModel">
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group"> 
+                                <mat-form-field class="example-full-width" appearance="outline" style="width: 100%;">
+                                    <input type="password" matInput placeholder="confirm Password...">
+                                </mat-form-field>
+                            </div>
+                            <div class="form-group submit-btn">
+                                
+                                <button mat-raised-button color="primary" class="mb-3">Register</button><br>
+                                <span class="clearfix text-center">Already have an account ? <span class="text-primary rig" routerLink="/login">Login</span></span>
+                            </div>
+                            <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+                                Signup failed!<br />{{ errorMessage }}
+                            </div>
+                        </form>
+                        <div class="alert alert-success" *ngIf="isSuccessful">
+                            Your registration is successful!
+                        </div>
+                    </div>
+                </div>
+                <div class="homePage">
+                    <a class="mt-3 text-black ">Go to Homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>        
+</section>

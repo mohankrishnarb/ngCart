@@ -1,0 +1,60 @@
+.log-btn{
+    // margin: 8px 8px 8px 0;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 0 auto;
+    outline: none;
+}
+
+.login{
+    background-color: #d2d6de;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.logInfo{
+    width: 360px;
+    display: block;
+    margin: 0 auto!important;
+}
+
+mat-form-field-wrapper{
+    padding-bottom: 0!important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex{
+    width: 150%!important;
+}
+
+.mainTitle h2{
+    font-size: 35px;
+}
+
+.submit-btn{
+    text-align: center;
+}
+
+.homePage{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.homePage a{
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.rig:hover{
+    cursor: pointer;
+}

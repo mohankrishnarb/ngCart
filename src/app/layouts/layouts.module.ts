@@ -13,6 +13,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { LayoutsRoutingModule } from './layouts-routing.module';
 import { PagesModule } from '../pages/pages.module';
 import { PagesRoutingModule } from '../pages/pages-routing.module';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { PagesRoutingModule } from '../pages/pages-routing.module';
     MatListModule,
     MatSidenavModule,
     LayoutsRoutingModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    MatExpansionModule
   ],
   exports:[LayoutsComponent, MenuComponent, HeaderComponent, FooterComponent ],
 })
