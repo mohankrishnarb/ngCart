@@ -14,7 +14,15 @@ export const environment = {
     DELETE_CATEGORY_DETAILS: 'delete'    
   },
   AUTH_BASE_URL:'http://localhost:3000/api/auth/',
-  API_BASE_URL:'http://localhost:3000/api/test/'
+  API_BASE_URL:'http://localhost:3000/api/test/',
+  SUB_CATEGORY_BASE_URL:'http://localhost:3000/subcategories/',
+  SUB_CATEGORIES:{
+    GET_ALL_SUBCATEGORIES:'list',
+    GET_SUBCATEGORY_DETAILS: 'list',
+    ADD_SUBCATEGORY_DETAILS: 'add',
+    UPDATE_SUBCATEGORY_DETAILS: 'update',
+    DELETE_SUBCATEGORY_DETAILS: 'delete'
+  }
 };
 
 /*

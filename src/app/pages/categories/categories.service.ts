@@ -11,7 +11,7 @@ export class CategoriesService {
 
   getCategories(){
     let url = environment.CATEGORY_BASE_URL + environment.CATEGORIES.GET_ALL_CATEGORIES;
-    return this.http.get<any[]>(url);
+    return this.http.get<any[]>(url); 
   }
 
   viewCategory(id:any){

@@ -1,1 +1,60 @@
-<p>view-subcategory works!</p>
+<section class="subCategory m-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="mainSubCategory">
+                <div class="addSubCategory m-2 p-3 bg-white col-sm-12 col-md-5 clearfix">
+                    <div class="section-tile">
+                        <p class="headline">Add Subcategory</p>
+                    </div>
+                    <div class="addSubCategoryForm">
+                        <form>
+                            <div class="form-group mt-2 mb-2">
+                                <label class="mb-2">Language</label>
+                                <select class="form-select">
+                                    <option value="1">Engilsh</option>
+                                    <option value="2">Arabic</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-2 mb-2">
+                                <label class="mb-2">Category Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group mt-2 mb-2">
+                                <label class="mb-2">Slug <small class="text-muted">(If you leave it blank, it will be generated automatically.)</small> </label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group mt-2 mb-2">
+                                <label class="mb-2">Description (Meta Tag)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group mt-2 mb-2">
+                                <label class="mb-2">Keywords (Meta Tag)</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group mt-2 mb-2">
+                                <label class="mb-2">Parent Category</label>
+                                <select class="form-select mb-4">
+                                    <option value="1">Select</option>
+                                    <option value="2">Life Style</option>
+                                    <option value="3">Travel</option>
+                                    <option value="4">Fashion</option>
+                                    <option value="5">RSS Feed</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-2 mb-2">
+                                <label>Show on Menu: &nbsp;&nbsp;&nbsp;</label>
+                                <mat-radio-group>
+                                    <mat-radio-button value="yes" color="primary" checked>Yes</mat-radio-button>&nbsp;&nbsp;
+                                    <mat-radio-button value="no" color="primary">No</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                            <div class="form-group mt-2 mb-2 addCat-btn">
+                                <button mat-raised-button color="primary">Add SubCategory</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

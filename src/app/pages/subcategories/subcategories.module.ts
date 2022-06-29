@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { SubcategoriesRoutingModule } from './subcategories-routing.module';
 import { EditSubcategoryComponent } from './edit-subcategory/edit-subcategory.component';
 import { ViewSubcategoryComponent } from './view-subcategory/view-subcategory.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { ViewSubcategoryComponent } from './view-subcategory/view-subcategory.co
   ],
   imports: [
     CommonModule,
-    SubcategoriesRoutingModule
+    SubcategoriesRoutingModule,
+    MatRadioModule,
+    MatButtonModule
   ]
 })
 export class SubcategoriesModule { }

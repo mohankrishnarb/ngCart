@@ -14,6 +14,8 @@ import { LayoutsRoutingModule } from './layouts-routing.module';
 import { PagesModule } from '../pages/pages.module';
 import { PagesRoutingModule } from '../pages/pages-routing.module';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { AuthRoutingModule } from '../auth/auth-routing.module';
+import { SubcategoriesRoutingModule } from '../pages/subcategories/subcategories-routing.module';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSidenavModule,
     LayoutsRoutingModule,
     PagesRoutingModule,
-    MatExpansionModule
+    MatExpansionModule,
+    AuthRoutingModule,
+    SubcategoriesRoutingModule
   ],
   exports:[LayoutsComponent, MenuComponent, HeaderComponent, FooterComponent ],
 })
